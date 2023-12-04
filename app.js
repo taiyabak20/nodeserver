@@ -20,6 +20,6 @@ app.use('/admin', adminRoutes);
 app.use(shopRoutes);
 app.use(contactRoutes)
 app.use(success)
-app.use('*',errorController.get404);
+app.use(errorController.get404);
 
 app.listen(3000);
